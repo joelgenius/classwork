@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--External CSS-->
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css" crossorigin="anonymous">
+    <!-- Bootstrap CSS CDN
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="bootstrap-icons-1.8.2/bootstrap-icons.css">
+
+    <title>Hostel Maintenance Site</title>
+</head>
+<body>
+    <!--nav bar-->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+        <div class="container">
+            <!--page icon
+            <img
+                src="img/room_20px.png"
+                alt=""
+            />
+            <img src="/bootstrap-icons-1.8.2/gear-wide-connected.svg" alt="bootstrap5-icon">-->
+            
+            <a href="#" class="navbar-brand">OHMS</a>
+
+            <!--button nav toggler for small screens -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+            <!--nav menu-->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">What We Do</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#report">Reports</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Showcase-->
+    <section class="bg-dark text-light p-5 text-center text-sm-start" id="services">
+        <div class="container">
+            <div class="d-sm-flex align-items-center justify-content-between">
+                <div>
+                    <h1>In need <span class="text-warning">We Fix</span></h1>
+                    <p class="lead my-4">
+                        We offer a full feature maintenance system to efficiently mainten the entire residential facility in the univeristy
+                        of college. Reducing the staff & paper works, this system will keep the update records of students, hostel blocks, rooms 
+                        and other facilities.
+                    </p>
+                    <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#login">Join Us</button>
+                </div>
+                <!--showcase image-->
+                <img
+                    class="img-fluid w-50 d-none d-sm-block"
+                    src="img/jengologo.jpg"
+                    alt=""
+                />
+            </div>
+        </div>
+    </section>
+
+    <!--newsletter
+    <section class="bg-primary text-light p-5">
+        <div class="container">
+          <div class="d-md-flex justify-content-between align-items-center">
+            <h3 class="mb-3 mb-md-0">Contact Us For Our Services</h3>
+
+            <div class="input-group news-input">
+                <input type="text" class="form-control" placeholder="Enter Email"/>
+                <button class="btn btn-dark bt-lg" type="button"/>Send</button>
+            </div>
+          </div>  
+        </div>
+    </section>-->
+    
+    <!--boxes-->
+    <section class="p-5">
+        <div class="container">
+            <div class="row text-center g-2">
+                <div class="col-md">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body text-light">
+                            <div class="h1 mb-3">
+                                <img src="img/jcole.webp" alt="">
+                            </div>
+                            <h3 class="card-title mb-3">Funiture</h3>
+                            <p class="card-text">We serve our clients with funiture maintenance such as tables, beds, doors repair and management.</p>
+                            <a href="#." class="btn btn-primary">Request</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-secondary text-light">
+                        <div class="card-body text-light">
+                            <div class="h1 mb-3">
+                                <img src="img/building_50px.png" alt="">
+                            </div>
+                            <h3 class="card-title mb-3">Building</h3>
+                            <p class="card-text">We serve our clients with building maintenance such as floors, walls, color repair and management.</p>
+                            <a href="#." class="btn btn-dark">Request</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body text-light">
+                            <div class="h1 mb-3">
+                                <img src="img/electrical_50px.png" alt="">
+                            </div>
+                            <h3 class="card-title mb-3">Electrical</h3>
+                            <p class="card-text">We serve our clients with electricity maintenance such as lights, sockets, switchs repair and management.</p>
+                            <a href="#." class="btn btn-primary">Request</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Services section 1-->
+    <section id="learn" class="p-5">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md">
+                    <img src="img/h1.jpg" alt="#" class="img-fluid w-100">
+                </div>
+                <div class="col-md p-5">
+                    <h2>The Heading of this section is Here</h2>
+                    <p class="lead">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                         In cum natus commodi reprehenderit pariatur modi!
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Consequatur eveniet tenetur provident doloremque ducimus pariatur quae id sed fugiat itaque hic accusamus voluptatem sint, praesentium a perspiciatis aliquid, dolor quas!
+                    </p>
+                    <a href="#." class="btn btn-light mt-3">
+                       <i class="bi bi-chevron-right"></i>Read More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Services section 2-->
+    <section id="learn" class="p-5 bg-dark">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md p-5 text-light">
+                    <h2>The Heading of this section is Here</h2>
+                    <p class="lead">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                         In cum natus commodi reprehenderit pariatur modi!
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Consequatur eveniet tenetur provident doloremque ducimus pariatur quae id sed fugiat itaque hic accusamus voluptatem sint, praesentium a perspiciatis aliquid, dolor quas!
+                    </p>
+                    <a href="#." class="btn btn-light mt-3">
+                        <i class="bi bi-chevron-right"></i>Read More
+                    </a>
+                </div>
+                <div class="col-md">
+                    <img src="img/h2.jpg" alt="#" class="img-fluid w-100">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--report Accordion-->
+    <section id="report" class="p-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Report Block</h2>
+            <div class="accordion accordion-flush" id="react">
+
+                <!--Report #1-->
+                <div class="accordion-item">  
+                  <h2 class="accordion-header" >
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#report-One">
+                      Report #1
+                    </button>
+                  </h2>
+                  <div id="report-One" class="accordion-collapse collapse" data-bs-parent="#report">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                  </div>
+                </div>
+
+                <!--Report #2-->
+                <div class="accordion-item">  
+                    <h2 class="accordion-header" >
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#report-two">
+                        Report #2
+                      </button>
+                    </h2>
+                    <div id="report-two" class="accordion-collapse collapse" data-bs-parent="#report">
+                      <div class="accordion-body">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo repudiandae debitis rerum deleniti quia, corrupti perferendis, ab unde quibusdam corporis tempore dolorem est facere inventore quaerat reprehenderit, cupiditate consequuntur dicta dolore libero. Minima,
+                            alias aliquid placeat quis laudantium nulla ex pariatur magni quam consequuntur voluptas eligendi deleniti provident odio delectus.
+                      </div>
+                    </div>
+                  </div>
+
+                <!--Report #3-->
+                <div class="accordion-item">  
+                    <h2 class="accordion-header" >
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#report-three">
+                        Report #3
+                      </button>
+                    </h2>
+                    <div id="report-three" class="accordion-collapse collapse" data-bs-parent="#report">
+                      <div class="accordion-body">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo repudiandae debitis rerum deleniti quia, corrupti perferendis, ab unde quibusdam corporis tempore dolorem est facere inventore quaerat reprehenderit, cupiditate consequuntur dicta dolore libero. Minima,
+                            alias aliquid placeat quis laudantium nulla ex pariatur magni quam consequuntur voluptas eligendi deleniti provident odio delectus.
+                      </div>
+                    </div>
+                  </div>
+
+              </div>
+        </div>
+    </section>
+
+    <!--contact & maps-->
+    <section class="p-5 bg-secondary" id="contact">
+        <div class="container">
+            <div class="row g-4">
+                <!--1st column-->
+                <div class="col-md">
+                    <h2 class="text-center mb-4">Contact US</h2>
+                    <ul class="list-group list-group-flush lead">
+                        <li class="list-group-item">
+                            <span class="fw-bold">Main Location:</span>UDOM CIVE
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Phone:</span>(255) 231-56789
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Email:</span>info@ohms.co.tz
+                        </li>
+                    </ul>
+                </div>
+                <!--2nd column-->
+                <div class="col-md">
+                    <h2 class="text-center mb-4">Message</h2>
+                    <form class="form">
+                        <div class="mb-1">
+                            <input type="email" class="form-control" id="email" placeholder="Email">
+                        </div>
+                        <div class="mb-1">
+                            <textarea class="form-control" placeholder="Message"></textarea>
+                        </div>
+                        <div class="mb-1">
+                            <button type="button" class="btn btn-light form-control" id="send">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--modal login-->
+    <div class="modal fade" id="login" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="login">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="lead">Enter your credentials to login</p>
+                    <form name="myLogin" method="post">
+                        <div class="mb-3">
+                            <label for="u_name" class="col-form-label">
+                                Username: 
+                            </label>
+                            <input type="text" class="form-control" id="uname" name="username"/>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="col-form-label">
+                                Password: 
+                            </label>
+                            <input type="password" class="form-control" id="pass" name="password"/>
+                        </div>
+                        <div class="mb-3">
+                            <label for="login_type" class="col-form-label">
+                                Login As: 
+                            </label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <!-- <a href="student/dashboard.html" class="btn btn-secondary">Login</a> -->
+                    <button type="submit" class="btn btn-secondary" onclick="loggedin()">Login</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#register">Join</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--modal register here!-->
+    <div class="modal fade" id="register" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="register">Register</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="lead">Enter your credentials to Register</p>
+                    <form name="myRegister" id="myRegister" method="post">
+                        <div class="mb-2">
+                            <label for="u_name" class="col-form-label">
+                                User Name: 
+                            </label>
+                            <input type="text" class="form-control" placeholder="Enter Username" id="u_name">
+                            <bi class="bi-check-circle"></bi>
+                            <bi class="bi-exclamation-circle"></bi>
+                            <small>Error Message</small>
+                        </div>
+                        <div class="mb-2">
+                            <label for="email" class="col-form-label">
+                                Email: 
+                            </label>
+                            <input type="email" class="form-control" placeholder="info@email.com" id="email">
+                            <bi class="bi-check-circle"></bi>
+                            <bi class="bi-exclamation-circle"></bi>
+                            <small>Error Message</small>
+                        </div>
+                        <div class="mb-2">
+                            <label for="password1" class="col-form-label">
+                                Password: 
+                            </label>
+                            <input type="password" class="form-control" placeholder="Password" id="password1">
+                            <bi class="bi-check-circle"></bi>
+                            <bi class="bi-exclamation-circle"></bi>
+                            <small>Error Message</small>
+                        </div>
+                        <div class="mb-2">
+                            <label for="password2" class="col-form-label">
+                                Confirm Password: 
+                            </label>
+                            <input type="password" class="form-control" placeholder="Confirm Password" id="password2">
+                            <bi class="bi-check-circle"></bi>
+                            <bi class="bi-exclamation-circle"></bi>
+                            <small>Error Message</small>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#login">Login</button>
+                    <button type="button" class="btn btn-primary">Join</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--footer-->
+    <footer class="p-5 bg-dark text-white text-center position-relative">
+        <div class="container">
+            <p class="lead">Copyright &copy; 2022 OHMS</p>
+
+            <a href="#" class="position-absolute bottom-0 end-0 p-5">
+                <i class="bi bi-arrow-up-circle h1"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!--login script-->
+    <script>
+        // login form functio
+        function loggedin(){
+          //  var usr = document.forms["myLogin"]["username"].valule;
+          //  var pw = document.forms["myLogin"]["password"].valule;
+            var usr = document.getElementById('uname').value;
+            var pw = document.getElementById('pass').value;
+            if(usr == "student" && pw == "1234"){
+                window.location.href="../student/dashboard.html";
+            }
+            else{
+                alert("Invalid Username or Password");
+            }
+         
+        }
+
+        // register form function
+        const form = document.getElementById("myRegister");
+        const username = document.getElementById("u_name");
+        const email = document.getElementById("email");
+        const password1 = document.getElementById("passowrd1");
+        const password2 = document.getElementById("passowrd2");
+
+        form.addEventListener('submit', e=> {
+            e.preventDefault();
+            checkInput();
+        });
+
+        function checkInput(){
+            const usernameValue = username.value.trim();
+            const emailValue = email.value.trim();
+            const password1Value = password1.value.trim();
+            const password2Value = password2.value.trim();
+        }
+        
+    </script>
+
+    <!-- Bootstrap Bundle with Popper 
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

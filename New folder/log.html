@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon" class="favicon">
+</head>
+
+<body style="
+  
+background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url('sp.jpg')
+">>
+
+    <main>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <div class="card registerCard">
+                        <!-- <img src="./assets/img/logo.jpg" height="200px" alt="" class="registerImage"> -->
+                        <div class="card-body">
+                            <form action="../Music Store/index.html" class="form-group registerForm" id="registerForm">
+                            
+                                <div class="form-floating m-2">
+                                    <input type="email" class="form-control" id="email" placeholder="Enter Email" required/>
+                                    <label for="email">Enter Email</label>
+                                    <div class="error"></div>
+                                </div>
+                            
+                                <div class="form-floating m-2">
+                                    <input type="password" class="form-control" id="password"
+                                        placeholder="Enter Password" required/>
+                                    <label for="password">Enter Password</label>
+                                    <div class="error"></div>
+                                </div>
+                            
+                                <hr class="py-3">
+                                <button type="submit" class="btn btn-outline-primary">Login</button><br>
+                                <a href="testing.html" class="text-center">Don`t have an account?</a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4"></div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+const form = document.querySelector('#registerForm')
+        form.addEventListener('submit', (e) => {
+            e.preventDefault()
+            loggedin()
+           
+        })
+        // login form function
+        function loggedin(){
+        
+            var usr = document.getElementById('email').value;
+            var pw = document.getElementById('password').value;
+            
+
+            if(usr == "" && pw == ""){
+                alert("Invalid Username or Password");
+               
+            }
+            if(pw.length<8){
+                alert("password should be atleast eight(8) charecters");
+                return false;
+            } 
+            else{
+                window.location.href="../Music Store/store2.html";
+                return true
+            }
+
+            
+         
+        }
+    </script>
+
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
